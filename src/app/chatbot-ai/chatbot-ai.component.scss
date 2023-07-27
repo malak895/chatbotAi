@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 
 #helpdesk {
   font-family: "Roboto", sans-serif;
@@ -19,19 +19,6 @@
     
     transition: all 0.5s ease;
   }
-  
-  #helpdesk-popup-header::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -10px;
-    height: 15px;
-    background-image: linear-gradient(to right, #673ab7, #813bcb, #9e38de, #bc32ef, #dc22ff);
-    border-bottom-left-radius: 50% 10px;
-    border-bottom-right-radius: 50% 10px;
-  }
-  
 #helpdesk-popup {
     position: fixed;
     bottom: 78px;
@@ -175,43 +162,10 @@
     }
   }
 
-.box {
-  border-style: solid;
-  border-width: 1px;
-  display: block;
-  width: 100px;
-  height: 100px;
-  
-  transition: width 10s, height 10s, background-color 2s, transform 2s;
-}
-
-.box:hover {
-
-  width: 200px;
-  height: 200px;
-  transform: rotate(360deg);
- 
-}
- .chat-input input {
-  width: 100%;
-  background: #ffffff;
-  padding: 15px 70px 15px 15px;
-  border-radius: 0 0 15px 15px;
-  resize: none;
-  border-width: 1px 0 0 0;
-  border-style: solid;
-  border-color: #f8f8f8;
-  color: #000000;
-  font-weight: normal;
-  font-size: 13px;
-  transition: border-color 0.5s ease;
-}
 .helpdesk-popup-button{
 
     color: #7a7a7a;
 }
-
-
 #chatty{
   padding: 1px;
   border: none;
@@ -227,19 +181,6 @@
   text-align: right;
   background-color: #fff;
 }
-.grees {
-  background-color: rgb(3, 17, 3);
-}
-
-.red {
-  background-color: rgb(238, 223, 12);
-}
-
-view{
-  width: 50px; height: 5px;;
-}
-
-
 
 .Chat-inputField {
   font-size: 18px;
@@ -250,7 +191,6 @@ view{
       outline: none;
   }
 }
-
 @keyframes Chat-dots {
   0% {
       opacity: 0;
@@ -265,8 +205,6 @@ view{
       transform: translate(0, 1px);
   }
 }
-
-
 .content-button {
   background-color: #cecbcb;
   border: none;
@@ -276,7 +214,7 @@ view{
   white-space: nowrap;
   margin-left: auto;
   box-shadow: 0 0 20px #dc22ff;
-  cursor: pointer;
+ 
   color: bc32ef(26, 21, 21);
   padding: 10px;
   border-radius: 5px;
@@ -302,53 +240,7 @@ view{
      transform: translate(0, -0.1rem);
 }
 
-.ask{
-  
-    border: 0.5px solid 248bf5hsl(192, 56%, 36%);
-    background-image: linear-gradient(to right, #673ab7, #813bcb, #9e38de, #bc32ef, #dc22ff);
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    display: inline-block;
-    max-width: 80%;
-    text-align: right;
-    float: right;
-  
-  }
   .button-container {
     display: flex;
    
   }
-  .like,
-  .game,
-  .dislike {
-    display: inline-block;
-    background-color: #cecbcb;
-    color: #36058a;
-    padding: 10px;
-    border-radius: 50px;
-    margin-bottom: 10px;
-    max-width: 40%;
-    border-bottom-right-radius: 0.8rem 0.7rem;
-    transform: translate(0, -0.1rem);
-    margin: 0; 
-    float: right; 
-  }
-  
-  .like {
-    margin-right: 10px; 
-  }
-  
-  .dislike {
-    margin-right: 10px; 
-  }
-  
-  .game {
-    margin-right: 10px; 
-  }
-  
-
-.power{
-  margin-left: 90px;
-}
