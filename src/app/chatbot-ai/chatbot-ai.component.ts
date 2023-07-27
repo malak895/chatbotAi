@@ -56,19 +56,8 @@ export class ChatbotAiComponent implements OnInit {
     private http: HttpClient
   ) {}
 
-  getMostCommonMessage() {
-    this.http.get<{ most_common_message: string }>('http://localhost:5000/most_common_message')
-      .subscribe(data => {
-        this.mostCommonMessage = data.most_common_message;
-      });
-  }
 
-  getMostCommonBot() {
-    this.http.get<{ most_common_bot: string }>('http://localhost:5000/most_common_bot')
-      .subscribe(data => {
-        this.mostCommonBot = data.most_common_bot;
-      });
-  }
+
 
   ngOnInit(): void {
     if ('webkitSpeechRecognition' in window) {
@@ -98,8 +87,7 @@ export class ChatbotAiComponent implements OnInit {
       };
     }
 
-    this.getMostCommonMessage();
-    this.getMostCommonBot();
+ 
 
     setTimeout(() => {
       this.messages.push({
