@@ -332,32 +332,23 @@ view{
     max-width: 40%;
     border-bottom-right-radius: 0.8rem 0.7rem;
     transform: translate(0, -0.1rem);
-    margin: 0; /* Supprime la marge */
-    float: right; /* Ajoute la propriété float pour aligner horizontalement les boutons */
+    margin: 0; 
+    float: right; 
   }
   
   .like {
-    margin-right: 10px; /* Ajuste la marge à droite pour séparer les boutons */
+    margin-right: 10px; 
   }
   
   .dislike {
-    margin-right: 10px; /* Ajuste la marge à droite pour séparer les boutons */
+    margin-right: 10px; 
   }
   
   .game {
-    margin-right: 10px; /* Ajuste la marge à droite pour séparer les boutons */
+    margin-right: 10px; 
   }
   
 
 .power{
   margin-left: 90px;
-}
-
-.voice{
-    margin-left: 260px;
-    margin-top: 0; /* Remove the existing margin-top property */
-    transform: translateY(-30px);
-    color: white;
-
-  
 }
